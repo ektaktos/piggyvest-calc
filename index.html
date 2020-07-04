@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>The Better Way to Save & Invest Online</title>
+  </head>
+  <body>
+    <div class="menu-overlay" id="menu-overlay">
+      <div onclick="closemenu()" class=""><img src="./images/close.svg" width="15"></div>
+      <ul class="mobile-menu">
+        <li><a href="#" class="menu-link">About</a></li>
+        <li><a href="#" class="menu-link">Stories</a></li>
+        <li><a href="#" class="menu-link">FAQ</a></li>
+        <li><a href="#" class="menu-link">Blog</a></li>
+        <li><a href="#" class="menu-link">Log in</a></li>
+        <li><a href="#" class="menu-link">Create Account for Free</a></li>
+      </ul>
+    </div>
+    <nav>
+      <div>
+        <img src="./images/piggy-logo.svg" class="logo">
+      </div>
+      <div> 
+        <span onclick="openmenu()" class="menu-icon" id="menu-icon"><img src="./images/open-menu.svg" width="25"></span>
+        <ul class="menu">
+          <li class="menu-list"><a href="#" class="menu-link">About</a></li>
+          <li class="menu-list"><a href="#" class="menu-link">Stories</a></li>
+          <li class="menu-list"><a href="#" class="menu-link">FAQ</a></li>
+          <li class="menu-list"><a href="#" class="menu-link">Blog</a></li>
+          <li class="menu-list"><a href="#" class="menu-link">Log in</a></li>
+          <li class="menu-list register"><a href="#" class="menu-link register-btn">Create Account for Free</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- First section -->
+    <section class="first-section flex">
+      <div class="col-6">
+        <h1 class="major-head">Estimate your investment<br> growth over time</h1>
+        <img src="./images/hero.svg">
+      </div>
+
+      <div class="col-6 form">
+        <div class="form-group">
+          <label>AMOUNT TO LOCK (KES)</label>
+          <input type="number" id="amount" class="form-control" placeholder="25000">
+        </div>
+
+        <div class="form-group">
+          <label>DURATION (MONTHLY)</label>
+          <input type="number" id="duration" class="form-control" placeholder="Number of months">
+        </div>
+
+        <div class="form-group">
+          <label>PAYBACK DATE</label>
+          <input type="date" id="payback-date" class="form-control">
+        </div>
+
+        <div>
+          <button class="calculate-btn" onclick="calculateProfit()">Calculate</button>
+        </div>
+
+        <div>
+          <h1 class="blue-head balance-label">Estimated Balance</h1>
+          <h1 class="total-amount">KES <span id="totalAmount">0</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second section -->
+    <section class="second-section">
+      <div class="work-header">
+        <h1 class="blue-head">How does the calculator work</h1>
+      </div>
+      <div class="flex">
+        <div class="col-6">
+          <img src="./images/how-it-works.svg">
+        </div>
+
+        <div class="col-6 work-text">
+          <p>Use our "SafeLock" feature to lock funds away so you don't have access until your set date. You also earn over 13% p.a.</p>
+          <button class="calculate-btn">Create a Free Account</button>
+        </div>
+      </div>
+    </section>
+     <!-- Third section -->
+    <section class="third-section">
+      <h1 class="blue-head">Over ₦1,000,000,000 securely saved every month</h1>
+      <div>
+        <span>PiggyVest uses bank-level security measures to keep your data safe.</span><br>
+        <span>PiggyVest users save & invest well over a billion every single month, and they are just getting started.</span>
+      </div>
+      <button class="create-acc-btn">Create Account for Free</button>
+      <div class="store-images">
+        <img src="./images/app-store.svg">
+        <img src="./images/google-play.svg">
+      </div>
+   
+    </section>
+
+    <!-- Footer -->
+    <footer id="desktop-footer" class="flex">
+      <div class="col-8">
+        <img src="./images/piggy-logo.svg" class="footer-logo">
+        <div class="footer-line-1">
+          <span>PiggyVest (<a href="https://medium.com/@PiggyVest/introducing-piggyvest-the-future-of-savings-and-investments-e82482d3a595" target="_blank">formerly piggybank.ng</a>) is the largest online savings & investing platform in Nigeria.</span><br>
+          <span>For over 4 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</span>
+        </div>
+
+        <div class="footer-line-2">
+          <span>Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali Ayorinde Street, Victoria Island, Lagos.</span><br>
+          <span><a href="tel:0700 933 933 933">0700 933 933 933 (Mon-Fri from 9am-5pm)</a> - <a href="mailto:contact@piggyvest.com">contact@piggyvest.com</a></span>
+        </div>
+
+        <div class="copyright">
+          <span>© 2016 - 2020 PiggyTech Global Limited - RC 1405222</span>
+        </div>
+      </div>
+        <div class="col-2 footer-widget">
+          <ul class="footer-list">
+            <h2>Quick Links</h2>
+            <li><a href="#">AutoSave&trade;</a></li>
+            <li><a href="#">PiggyLink</a></li>
+            <li><a href="#">QuickSave&trade;</a></li>
+            <li><a href="#">SafeLock&trade;</a></li>
+            <li><a href="#">Withdrawals & Breaking</a></li>
+            <li><a href="#">Salary management</a></li>
+          </ul>
+        </div>
+      
+        <div class="col-2 footer-widget">
+          <ul class="footer-list">
+            <h2>COMPANY</h2>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <div class="social-icons">
+            <img src="./images/facebook.svg">
+            <img src="./images/twitter.svg">
+            <img src="./images/instagram.svg">
+          </div>
+        </div>
+    </footer>
+
+    <footer id="mobile-footer">
+      <div class="footer-flex">
+        <div class="col-half">
+          <ul class="footer-list">
+            <h2>COMPANY</h2>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <div class="social-icons">
+            <img src="./images/facebook.svg">
+            <img src="./images/twitter.svg">
+            <img src="./images/instagram.svg">
+          </div>
+        </div>
+        <div class="col-half">
+          <ul class="footer-list">
+            <h2>Quick Links</h2>
+            <li><a href="#">AutoSave&trade;</a></li>
+            <li><a href="#">PiggyLink</a></li>
+            <li><a href="#">QuickSave&trade;</a></li>
+            <li><a href="#">SafeLock&trade;</a></li>
+            <li><a href="#">Withdrawals & Breaking</a></li>
+            <li><a href="#">Salary management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <img src="./images/piggy-logo.svg" class="footer-logo">
+        <div class="footer-line-1">
+          <span>PiggyVest (<a href="https://medium.com/@PiggyVest/introducing-piggyvest-the-future-of-savings-and-investments-e82482d3a595" target="_blank">formerly piggybank.ng</a>) is the largest online savings & investing platform in Nigeria.</span><br>
+          <span>For over 4 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</span>
+        </div>
+
+        <div class="footer-line-2">
+          <span>Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali Ayorinde Street, Victoria Island, Lagos.</span><br>
+          <span><a href="tel:0700 933 933 933">0700 933 933 933 (Mon-Fri from 9am-5pm)</a> - <a href="mailto:contact@piggyvest.com">contact@piggyvest.com</a></span>
+        </div>
+
+        <div class="copyright">
+          <span>© 2016 - 2020 PiggyTech Global Limited - RC 1405222</span>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+<script src="./main.js"></script>
